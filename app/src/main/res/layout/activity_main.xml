@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonTitular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Professor Titular"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonHorista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Professor Horista"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextInitialSalary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Salário Inicial"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/editTextYears"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Anos na Instituição"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/editTextTotalHours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Total de Horas (horista)"
+        android:inputType="numberDecimal"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/editTextHourlyRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valor da Hora Aula (horista)"
+        android:inputType="numberDecimal"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular Salário" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Salário Final:"
+        android:textSize="18sp" />
+
+</LinearLayout>
